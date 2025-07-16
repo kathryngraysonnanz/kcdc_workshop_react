@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Button as KendoButton } from '@progress/kendo-react-buttons';
 
 export interface ButtonProps {
