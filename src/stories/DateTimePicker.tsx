@@ -40,7 +40,6 @@ export interface DateTimePickerProps {
   width?: string; 
 }
 
-/** Primary UI component for user interaction */
 export const DateTimePicker = ({
   ...props
 }: DateTimePickerProps) => {

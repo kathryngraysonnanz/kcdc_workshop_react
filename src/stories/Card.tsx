@@ -16,7 +16,6 @@ export interface CardProps {
   style?: any; 
 }
 
-/** Primary UI component for user interaction */
 export const Card = ({
   ...props
 }: CardProps) => {
