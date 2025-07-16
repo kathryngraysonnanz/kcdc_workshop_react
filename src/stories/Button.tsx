@@ -3,19 +3,22 @@ import React from 'react';
 import { Button as KendoButton } from '@progress/kendo-react-buttons';
 
 export interface ButtonProps {
-
-  /** What background color to use */
-  backgroundColor?: string;
+  disabled?: boolean; 
   fillMode?: 'solid' | 'outline' | 'flat' | 'link';
-  size?: 'small' | 'medium' | 'large' | 'null';
+  icon?: string; 
+  iconClass?: string;
+  iconUrl?: string;
+  rounded?: 'small'| 'medium' | 'large' | 'full'; 
+  selected?: boolean;  
+  size?: 'small' | 'medium' | 'large';
+  themeColor: 'base' | 'primary' | 'secondary' | 'tertiary' | 'info' | 'success' | 'warning' | 'error' | 'dark' | 'light' | 'inverse'; 
+  togglable?: boolean; 
   label: string;
   onClick?: () => void;
 }
 
 /** Primary UI component for user interaction */
 export const Button = ({
-  size = 'medium',
-  backgroundColor,
   label,
   ...props
 }: ButtonProps) => {
