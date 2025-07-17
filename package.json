@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview",
+    "build": "microbundle --entry src/index.ts --format cjs,esm,umd --name CustomComponents",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -64,6 +63,7 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.0.1",
+    "microbundle": "^0.15.0", 
     "@storybook/addon-a11y": "^9.0.17",
     "@storybook/addon-docs": "^9.0.17",
     "@storybook/addon-onboarding": "^9.0.17",
